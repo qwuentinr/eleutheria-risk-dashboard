@@ -37,10 +37,18 @@ desktop.ini
 # Streamlit
 .streamlit/secrets.toml
 
-# Large data files (optional - uncomment if you want to exclude data files from git)
+# Exclude proprietary calculation scripts and source data (keep private)
+risk_calculator/scripts/risk_calculator*.py
+risk_calculator/scripts/eurozone_statistics.py
+risk_calculator/scripts/rates_taker.py
+risk_calculator/scripts/analyse.py
+risk_calculator/scripts/analyze_weo_structure.py
+risk_calculator/scripts/gpr_index_csv.py
+risk_calculator/data/
+risk_calculator/statistics_output/
+GPR/
+
 # Keep JSON output files and images for the dashboard - these are needed!
-# risk_calculator/data/
-# But keep JSON and images:
 # !risk_calculator/json/
 # !risk_calculator/images/
 
