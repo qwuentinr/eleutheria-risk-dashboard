@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "country": "Netherlands",
+    "analysis_date": "2025-11-02",
+    "start_year": 2015,
+    "end_year": 2024,
+    "years_analyzed": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2015,
+      "default_probability": 0.0958768595786702,
+      "rating": "AA-",
+      "debt_gdp": 63.799,
+      "deficit_gdp": -1.778,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2016,
+      "default_probability": 0.0821165595786702,
+      "rating": "AA-",
+      "debt_gdp": 60.883,
+      "deficit_gdp": 0.227,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2017,
+      "default_probability": 0.08467367068978131,
+      "rating": "AA-",
+      "debt_gdp": 55.986,
+      "deficit_gdp": 1.316,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2018,
+      "default_probability": 0.08243640402311465,
+      "rating": "AA-",
+      "debt_gdp": 51.522,
+      "deficit_gdp": 1.474,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2019,
+      "default_probability": 0.08151191791200353,
+      "rating": "AA-",
+      "debt_gdp": 47.597,
+      "deficit_gdp": 1.782,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2020,
+      "default_probability": 0.09878444291200353,
+      "rating": "AA-",
+      "debt_gdp": 53.348,
+      "deficit_gdp": -3.608,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2021,
+      "default_probability": 0.08611615680089242,
+      "rating": "AA-",
+      "debt_gdp": 50.431,
+      "deficit_gdp": -2.198,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2022,
+      "default_probability": 0.07113506235644797,
+      "rating": "AA-",
+      "debt_gdp": 48.345,
+      "deficit_gdp": 0.012,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2023,
+      "default_probability": 0.07302882356081279,
+      "rating": "AA-",
+      "debt_gdp": 45.098,
+      "deficit_gdp": -0.358,
+      "growth_trend": 1.377
+    },
+    {
+      "year": 2024,
+      "default_probability": 0.0785697701517013,
+      "rating": "AA-",
+      "debt_gdp": 43.235,
+      "deficit_gdp": -1.055,
+      "growth_trend": 1.377
+    }
+  ],
+  "summary": {
+    "min_probability": 0.07113506235644797,
+    "max_probability": 0.09878444291200353,
+    "average_probability": 0.08342496675640979,
+    "latest_probability": 0.0785697701517013,
+    "trend": "decreasing"
+  }
+}

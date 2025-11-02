@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "country": "Slovakia",
+    "assessment_date": "2025-11-02",
+    "model_version": "1.0",
+    "forecast_year": 2024,
+    "analysis_horizon": "2020-2029"
+  },
+  "overall_assessment": {
+    "default_probability_5yr": 0.13,
+    "rating": "A+",
+    "rating_outlook": "Negative"
+  },
+  "uncertainty": {
+    "median_probability": 0.13,
+    "confidence_interval_90": {
+      "lower": 0.12,
+      "upper": 0.13
+    },
+    "volatility": 0.0
+  },
+  "scenario_analysis": {
+    "base_case": {
+      "probability": 0.13,
+      "weight": 0.6
+    },
+    "upside_case": {
+      "probability": 0.12,
+      "weight": 0.2
+    },
+    "downside_case": {
+      "probability": 0.13,
+      "weight": 0.2
+    },
+    "expected_probability": 0.13
+  },
+  "key_drivers": {
+    "top_risk_factors": [
+      {
+        "feature": "debt_gdp",
+        "contribution": 0.087,
+        "direction": "negative"
+      },
+      {
+        "feature": "institutional_quality",
+        "contribution": 0.056,
+        "direction": "negative"
+      },
+      {
+        "feature": "deficit_gdp",
+        "contribution": 0.037,
+        "direction": "negative"
+      },
+      {
+        "feature": "geopolitical",
+        "contribution": 0.025,
+        "direction": "negative"
+      },
+      {
+        "feature": "debt_trajectory",
+        "contribution": 0.006,
+        "direction": "negative"
+      },
+      {
+        "feature": "gdp_volatility",
+        "contribution": 0.005,
+        "direction": "negative"
+      },
+      {
+        "feature": "current_account_gdp",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "inflation_5yr",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "gdp_per_capita",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "unemployment",
+        "contribution": 0.0,
+        "direction": "positive"
+      }
+    ]
+  },
+  "raw_features": {
+    "debt_gdp": null,
+    "deficit_gdp": null,
+    "current_account_gdp": null,
+    "inflation_5yr": null,
+    "gdp_per_capita": null,
+    "unemployment": null,
+    "external_debt_gdp": 50.0,
+    "reserves_months": 6.0,
+    "poverty_rate": null,
+    "debt_trajectory": 0.0,
+    "deficit_trend": 0.0,
+    "growth_trend": 1.5,
+    "reserve_change": 0.0,
+    "gdp_volatility": 2.0,
+    "inflation_volatility": 1.5,
+    "fx_volatility": 2.5,
+    "debt_deficit_interaction": 0,
+    "external_vulnerability": 0,
+    "eurozone_member": 1.0,
+    "reserve_currency": 0.0,
+    "institutional_quality": 50.0
+  },
+  "adjusted_features": {
+    "debt_gdp": null,
+    "deficit_gdp": null,
+    "current_account_gdp": null,
+    "inflation_5yr": null,
+    "gdp_per_capita": null,
+    "unemployment": null,
+    "external_debt_gdp": 50.0,
+    "reserves_months": 6.0,
+    "poverty_rate": null,
+    "debt_trajectory": 0.0,
+    "deficit_trend": 0.0,
+    "growth_trend": 1.5,
+    "reserve_change": 0.0,
+    "gdp_volatility": 2.0,
+    "inflation_volatility": 1.5,
+    "fx_volatility": 2.5,
+    "debt_deficit_interaction": 0,
+    "external_vulnerability": 0,
+    "eurozone_member": 1.0,
+    "reserve_currency": 0.0,
+    "institutional_quality": 50.0
+  },
+  "threshold_analysis": {
+    "reserves_months": {
+      "value": 6.0,
+      "status": "safe",
+      "thresholds": {
+        "safe": 6,
+        "warning": 3,
+        "danger": 1
+      }
+    }
+  }
+}

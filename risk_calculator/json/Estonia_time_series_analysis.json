@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "country": "Estonia",
+    "analysis_date": "2025-11-02",
+    "start_year": 2015,
+    "end_year": 2024,
+    "years_analyzed": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2015,
+      "default_probability": 0.08194441689573263,
+      "rating": "AA-",
+      "debt_gdp": 10.79,
+      "deficit_gdp": -0.242,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2016,
+      "default_probability": 0.08494408390344281,
+      "rating": "AA-",
+      "debt_gdp": 10.239,
+      "deficit_gdp": -0.618,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2017,
+      "default_probability": 0.09271807049474405,
+      "rating": "AA-",
+      "debt_gdp": 9.434,
+      "deficit_gdp": -1.066,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2018,
+      "default_probability": 0.09254447882807738,
+      "rating": "AA-",
+      "debt_gdp": 8.507,
+      "deficit_gdp": -1.146,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2019,
+      "default_probability": 0.08653814549474405,
+      "rating": "AA-",
+      "debt_gdp": 9.047,
+      "deficit_gdp": -0.109,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2020,
+      "default_probability": 0.11712650979195578,
+      "rating": "A+",
+      "debt_gdp": 19.096,
+      "deficit_gdp": -5.424,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2021,
+      "default_probability": 0.0911368719927443,
+      "rating": "AA-",
+      "debt_gdp": 18.419,
+      "deficit_gdp": -2.569,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2022,
+      "default_probability": 0.08435246935758764,
+      "rating": "AA-",
+      "debt_gdp": 19.112,
+      "deficit_gdp": -1.075,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2023,
+      "default_probability": 0.0971168371746225,
+      "rating": "AA-",
+      "debt_gdp": 20.184,
+      "deficit_gdp": -3.139,
+      "growth_trend": 1.6184
+    },
+    {
+      "year": 2024,
+      "default_probability": 0.08561731472431912,
+      "rating": "AA-",
+      "debt_gdp": 23.619,
+      "deficit_gdp": -1.685,
+      "growth_trend": 1.6184
+    }
+  ],
+  "summary": {
+    "min_probability": 0.08194441689573263,
+    "max_probability": 0.11712650979195578,
+    "average_probability": 0.09140391986579702,
+    "latest_probability": 0.08561731472431912,
+    "trend": "increasing"
+  }
+}

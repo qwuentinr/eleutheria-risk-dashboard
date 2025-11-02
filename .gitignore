@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large data files (optional - uncomment if you want to exclude data files from git)
+# Keep JSON output files and images for the dashboard - these are needed!
+# risk_calculator/data/
+# But keep JSON and images:
+# !risk_calculator/json/
+# !risk_calculator/images/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+

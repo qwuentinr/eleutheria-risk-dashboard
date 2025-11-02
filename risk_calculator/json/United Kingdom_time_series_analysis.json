@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "country": "United Kingdom",
+    "analysis_date": "2025-11-01",
+    "start_year": 2015,
+    "end_year": 2024,
+    "years_analyzed": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2015,
+      "default_probability": 52.42070778986714,
+      "rating": "CCC+",
+      "implied_spread": 1485,
+      "debt_gdp": 87.867,
+      "deficit_gdp": -4.594,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2016,
+      "default_probability": 52.419552510920056,
+      "rating": "CCC+",
+      "implied_spread": 1485,
+      "debt_gdp": 87.825,
+      "deficit_gdp": -3.312,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2017,
+      "default_probability": 52.3892392702489,
+      "rating": "CCC+",
+      "implied_spread": 1484,
+      "debt_gdp": 86.723,
+      "deficit_gdp": -2.491,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2018,
+      "default_probability": 52.37884103697069,
+      "rating": "CCC+",
+      "implied_spread": 1483,
+      "debt_gdp": 86.345,
+      "deficit_gdp": -2.27,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2019,
+      "default_probability": 52.35991462339496,
+      "rating": "CCC+",
+      "implied_spread": 1482,
+      "debt_gdp": 85.657,
+      "deficit_gdp": -2.472,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2020,
+      "default_probability": 53.681851877127265,
+      "rating": "CCC+",
+      "implied_spread": 1539,
+      "debt_gdp": 105.84,
+      "deficit_gdp": -13.173,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2021,
+      "default_probability": 53.62320614891317,
+      "rating": "CCC+",
+      "implied_spread": 1536,
+      "debt_gdp": 105.131,
+      "deficit_gdp": -7.725,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2022,
+      "default_probability": 53.18225165899286,
+      "rating": "CCC+",
+      "implied_spread": 1517,
+      "debt_gdp": 99.614,
+      "deficit_gdp": -4.556,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2023,
+      "default_probability": 53.23981009148753,
+      "rating": "CCC+",
+      "implied_spread": 1520,
+      "debt_gdp": 100.354,
+      "deficit_gdp": -6.054,
+      "growth_trend": 1.3842
+    },
+    {
+      "year": 2024,
+      "default_probability": 53.30834662966144,
+      "rating": "CCC+",
+      "implied_spread": 1523,
+      "debt_gdp": 101.227,
+      "deficit_gdp": -5.749,
+      "growth_trend": 1.3842
+    }
+  ],
+  "summary": {
+    "min_probability": 52.35991462339496,
+    "max_probability": 53.681851877127265,
+    "average_probability": 52.900372163758405,
+    "latest_probability": 53.30834662966144,
+    "trend": "increasing"
+  }
+}

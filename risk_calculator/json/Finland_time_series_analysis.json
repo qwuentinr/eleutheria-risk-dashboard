@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "country": "Finland",
+    "analysis_date": "2025-11-02",
+    "start_year": 2015,
+    "end_year": 2024,
+    "years_analyzed": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2015,
+      "default_probability": 0.11289498871553544,
+      "rating": "A+",
+      "debt_gdp": 68.764,
+      "deficit_gdp": -2.427,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2016,
+      "default_probability": 0.10645373977324334,
+      "rating": "A+",
+      "debt_gdp": 68.649,
+      "deficit_gdp": -1.677,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2017,
+      "default_probability": 0.09937508886282655,
+      "rating": "AA-",
+      "debt_gdp": 66.581,
+      "deficit_gdp": -0.607,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2018,
+      "default_probability": 0.1047357011053793,
+      "rating": "A+",
+      "debt_gdp": 65.278,
+      "deficit_gdp": -1.13,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2019,
+      "default_probability": 0.10792765356348645,
+      "rating": "A+",
+      "debt_gdp": 65.241,
+      "deficit_gdp": -0.929,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2020,
+      "default_probability": 0.15985568425736077,
+      "rating": "A",
+      "debt_gdp": 75.415,
+      "deficit_gdp": -5.532,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2021,
+      "default_probability": 0.1268046167549584,
+      "rating": "A+",
+      "debt_gdp": 73.247,
+      "deficit_gdp": -2.693,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2022,
+      "default_probability": 0.11212009556016025,
+      "rating": "A+",
+      "debt_gdp": 74.034,
+      "deficit_gdp": -0.174,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2023,
+      "default_probability": 0.13199570535639804,
+      "rating": "A+",
+      "debt_gdp": 77.302,
+      "deficit_gdp": -2.995,
+      "growth_trend": 1.2594
+    },
+    {
+      "year": 2024,
+      "default_probability": 0.14713235540490163,
+      "rating": "A+",
+      "debt_gdp": 82.53,
+      "deficit_gdp": -4.211,
+      "growth_trend": 1.2594
+    }
+  ],
+  "summary": {
+    "min_probability": 0.09937508886282655,
+    "max_probability": 0.15985568425736077,
+    "average_probability": 0.120929562935425,
+    "latest_probability": 0.14713235540490163,
+    "trend": "increasing"
+  }
+}

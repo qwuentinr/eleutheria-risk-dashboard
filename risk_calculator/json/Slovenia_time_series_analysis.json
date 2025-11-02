@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "country": "Slovenia",
+    "analysis_date": "2025-11-02",
+    "start_year": 2015,
+    "end_year": 2024,
+    "years_analyzed": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2015,
+      "default_probability": 0.14274353026241168,
+      "rating": "A+",
+      "debt_gdp": 83.418,
+      "deficit_gdp": -2.837,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2016,
+      "default_probability": 0.13153056093285048,
+      "rating": "A+",
+      "debt_gdp": 79.43,
+      "deficit_gdp": -1.999,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2017,
+      "default_probability": 0.11359429972010884,
+      "rating": "A+",
+      "debt_gdp": 74.89,
+      "deficit_gdp": 0.054,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2018,
+      "default_probability": 0.11297528899886276,
+      "rating": "A+",
+      "debt_gdp": 71.007,
+      "deficit_gdp": 0.896,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2019,
+      "default_probability": 0.10773902104594754,
+      "rating": "A+",
+      "debt_gdp": 66.02,
+      "deficit_gdp": 0.681,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2020,
+      "default_probability": 0.2133985379606283,
+      "rating": "A-",
+      "debt_gdp": 80.17,
+      "deficit_gdp": -7.677,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2021,
+      "default_probability": 0.1459891331550727,
+      "rating": "A+",
+      "debt_gdp": 74.832,
+      "deficit_gdp": -4.611,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2022,
+      "default_probability": 0.12820528871062828,
+      "rating": "A+",
+      "debt_gdp": 72.739,
+      "deficit_gdp": -3.014,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2023,
+      "default_probability": 0.11915364982173939,
+      "rating": "A+",
+      "debt_gdp": 68.394,
+      "deficit_gdp": -2.567,
+      "growth_trend": 2.28
+    },
+    {
+      "year": 2024,
+      "default_probability": 0.1070560729257866,
+      "rating": "A+",
+      "debt_gdp": 67.039,
+      "deficit_gdp": -0.892,
+      "growth_trend": 2.28
+    }
+  ],
+  "summary": {
+    "min_probability": 0.1070560729257866,
+    "max_probability": 0.2133985379606283,
+    "average_probability": 0.13223853835340366,
+    "latest_probability": 0.1070560729257866,
+    "trend": "decreasing"
+  }
+}

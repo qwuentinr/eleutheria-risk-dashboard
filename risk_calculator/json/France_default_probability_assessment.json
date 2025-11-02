@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "country": "France",
+    "assessment_date": "2025-11-02",
+    "model_version": "1.0",
+    "forecast_year": 2024,
+    "analysis_horizon": "2020-2029"
+  },
+  "overall_assessment": {
+    "default_probability_5yr": 0.4,
+    "rating": "BBB+",
+    "rating_outlook": "Stable"
+  },
+  "uncertainty": {
+    "median_probability": 0.4,
+    "confidence_interval_90": {
+      "lower": 0.36,
+      "upper": 0.44
+    },
+    "volatility": 0.03
+  },
+  "scenario_analysis": {
+    "base_case": {
+      "probability": 0.4,
+      "weight": 0.6
+    },
+    "upside_case": {
+      "probability": 0.38,
+      "weight": 0.2
+    },
+    "downside_case": {
+      "probability": 0.42,
+      "weight": 0.2
+    },
+    "expected_probability": 0.4
+  },
+  "key_drivers": {
+    "top_risk_factors": [
+      {
+        "feature": "debt_gdp",
+        "contribution": 0.564,
+        "direction": "negative"
+      },
+      {
+        "feature": "deficit_gdp",
+        "contribution": 0.114,
+        "direction": "negative"
+      },
+      {
+        "feature": "debt_trajectory",
+        "contribution": 0.037,
+        "direction": "negative"
+      },
+      {
+        "feature": "geopolitical",
+        "contribution": 0.025,
+        "direction": "negative"
+      },
+      {
+        "feature": "institutional_quality",
+        "contribution": 0.018,
+        "direction": "negative"
+      },
+      {
+        "feature": "gdp_volatility",
+        "contribution": 0.012,
+        "direction": "negative"
+      },
+      {
+        "feature": "current_account_gdp",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "inflation_5yr",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "gdp_per_capita",
+        "contribution": 0.0,
+        "direction": "positive"
+      },
+      {
+        "feature": "unemployment",
+        "contribution": 0.0,
+        "direction": "positive"
+      }
+    ]
+  },
+  "raw_features": {
+    "debt_gdp": 113.11,
+    "deficit_gdp": -5.79,
+    "current_account_gdp": 0.4,
+    "inflation_5yr": 3.3,
+    "gdp_per_capita": 46.2,
+    "unemployment": 7.38,
+    "external_debt_gdp": 50.0,
+    "reserves_months": 6.0,
+    "poverty_rate": null,
+    "debt_trajectory": 11.52,
+    "deficit_trend": 0.13,
+    "growth_trend": 1.06,
+    "reserve_change": 0.0,
+    "gdp_volatility": 3.37,
+    "inflation_volatility": 1.96,
+    "fx_volatility": 2.5,
+    "debt_deficit_interaction": 0.65,
+    "external_vulnerability": -0.48,
+    "eurozone_member": 1.0,
+    "reserve_currency": 0.0,
+    "institutional_quality": 70.54
+  },
+  "adjusted_features": {
+    "debt_gdp": 156.66,
+    "deficit_gdp": -6.54,
+    "current_account_gdp": 0.02,
+    "inflation_5yr": 3.3,
+    "gdp_per_capita": 46.2,
+    "unemployment": 7.38,
+    "external_debt_gdp": 50.0,
+    "reserves_months": 6.0,
+    "poverty_rate": null,
+    "debt_trajectory": 11.52,
+    "deficit_trend": 0.13,
+    "growth_trend": 1.06,
+    "reserve_change": 0.0,
+    "gdp_volatility": 3.37,
+    "inflation_volatility": 1.96,
+    "fx_volatility": 2.5,
+    "debt_deficit_interaction": 0.65,
+    "external_vulnerability": -0.48,
+    "eurozone_member": 1.0,
+    "reserve_currency": 0.0,
+    "institutional_quality": 70.54
+  },
+  "threshold_analysis": {
+    "debt_gdp": {
+      "value": 113.11,
+      "status": "warning",
+      "thresholds": {
+        "safe": 60,
+        "warning": 90,
+        "danger": 120
+      }
+    },
+    "deficit_gdp": {
+      "value": -5.79,
+      "status": "warning",
+      "thresholds": {
+        "safe": 3,
+        "warning": 5,
+        "danger": 8
+      }
+    },
+    "current_account_gdp": {
+      "value": 0.4,
+      "status": "safe",
+      "thresholds": {
+        "safe": -3,
+        "warning": -5,
+        "danger": -8
+      }
+    },
+    "inflation_5yr": {
+      "value": 3.3,
+      "status": "safe",
+      "thresholds": {
+        "safe": 3,
+        "warning": 5,
+        "danger": 10
+      }
+    },
+    "reserves_months": {
+      "value": 6.0,
+      "status": "safe",
+      "thresholds": {
+        "safe": 6,
+        "warning": 3,
+        "danger": 1
+      }
+    }
+  }
+}
