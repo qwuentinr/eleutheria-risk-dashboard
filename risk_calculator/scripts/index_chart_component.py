@@ -36,27 +36,55 @@ def load_index_data(output_dir="output"):
         Dictionary with keys like 'Equal Weighted', 'Market Cap Weighted'
         and values as DataFrames with 'date' and 'cumulative_index' columns
     """
+    # Convert to Path and resolve
     output_path = Path(output_dir)
+    if not output_path.is_absolute():
+        # If relative, resolve relative to script location
+        script_dir = Path(__file__).parent.resolve()
+        project_dir = script_dir.parent.resolve()
+        output_path = (project_dir / output_path).resolve()
+    else:
+        output_path = output_path.resolve()
+    
     data_dict = {}
     
     try:
+        # Check if directory exists
+        if not output_path.exists():
+            st.error(f"Directory does not exist: {output_path}")
+            return {}
+        
         # Load Equal Weighted
-        if (output_path / "performance_equal_weighted.csv").exists():
-            perf_eq = pd.read_csv(output_path / "performance_equal_weighted.csv")
-            perf_eq['date'] = pd.to_datetime(perf_eq['date'])
-            perf_eq = perf_eq.sort_values('date').reset_index(drop=True)
-            data_dict['Equal Weighted'] = perf_eq
+        eq_file = output_path / "performance_equal_weighted.csv"
+        if eq_file.exists():
+            perf_eq = pd.read_csv(eq_file)
+            if 'date' in perf_eq.columns and 'cumulative_index' in perf_eq.columns:
+                perf_eq['date'] = pd.to_datetime(perf_eq['date'])
+                perf_eq = perf_eq.sort_values('date').reset_index(drop=True)
+                data_dict['Equal Weighted'] = perf_eq
+            else:
+                st.warning(f"CSV file {eq_file} missing required columns: 'date' and 'cumulative_index'")
+        else:
+            st.warning(f"File not found: {eq_file}")
             
         # Load Market Cap Weighted
-        if (output_path / "performance_market_cap_weighted.csv").exists():
-            perf_mc = pd.read_csv(output_path / "performance_market_cap_weighted.csv")
-            perf_mc['date'] = pd.to_datetime(perf_mc['date'])
-            perf_mc = perf_mc.sort_values('date').reset_index(drop=True)
-            data_dict['Market Cap Weighted'] = perf_mc
+        mc_file = output_path / "performance_market_cap_weighted.csv"
+        if mc_file.exists():
+            perf_mc = pd.read_csv(mc_file)
+            if 'date' in perf_mc.columns and 'cumulative_index' in perf_mc.columns:
+                perf_mc['date'] = pd.to_datetime(perf_mc['date'])
+                perf_mc = perf_mc.sort_values('date').reset_index(drop=True)
+                data_dict['Market Cap Weighted'] = perf_mc
+            else:
+                st.warning(f"CSV file {mc_file} missing required columns: 'date' and 'cumulative_index'")
+        else:
+            st.warning(f"File not found: {mc_file}")
             
         return data_dict
     except Exception as e:
         st.error(f"Error loading index data: {e}")
+        import traceback
+        st.code(traceback.format_exc())
         return {}
 
 
@@ -187,15 +215,31 @@ def render_index_chart_tab(output_dir="output", show_subheader=True, show_info=T
     bool
         True if chart was rendered successfully, False otherwise
     """
+    # Convert to Path and resolve
     output_path = Path(output_dir)
+    if not output_path.is_absolute():
+        # If relative, resolve relative to script location
+        script_dir = Path(__file__).parent.resolve()
+        project_dir = script_dir.parent.resolve()
+        output_path = project_dir / output_path
+    output_path = output_path.resolve()
     
-    # Load data
+    # Load data - pass the resolved path
     perf_dict = load_index_data(str(output_path))
     
     if not perf_dict:
         st.warning("⚠️ No performance data found.")
-        st.info(f"Looking for data in: {output_path.absolute()}")
-        st.code("Make sure you've run: python run_dual_index.py", language="bash")
+        st.info(f"Looking for data in: {output_path}")
+        st.info(f"Script directory: {Path(__file__).parent.resolve()}")
+        st.info(f"Project directory: {Path(__file__).parent.parent.resolve()}")
+        
+        # List files in the directory for debugging
+        if output_path.exists():
+            st.info(f"Files in directory: {list(output_path.glob('*.csv'))}")
+        else:
+            st.error(f"Directory does not exist: {output_path}")
+        
+        st.code("Make sure the CSV files are in the data directory.", language="bash")
         return False
     
     # Show data range info if requested

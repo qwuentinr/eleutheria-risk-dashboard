@@ -1591,7 +1591,8 @@ def main():
     
     elif view_mode == "Index Performance":
         # Render index chart tab
-        render_index_chart_tab(output_dir=str(DATA_DIR), show_subheader=True, show_info=True)
+        # Pass the data directory path - component will resolve it correctly
+        render_index_chart_tab(output_dir=str(DATA_DIR.resolve()), show_subheader=True, show_info=True)
         
         # Newsletter subscription link
         render_newsletter_subscription()
