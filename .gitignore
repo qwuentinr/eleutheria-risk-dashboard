@@ -51,6 +51,9 @@ GPR/
 # Keep JSON output files and images for the dashboard - these are needed!
 # !risk_calculator/json/
 # !risk_calculator/images/
+# Keep performance CSV files for the index chart - these are needed!
+!risk_calculator/data/performance_equal_weighted.csv
+!risk_calculator/data/performance_market_cap_weighted.csv
 
 # Temporary files
 *.tmp
