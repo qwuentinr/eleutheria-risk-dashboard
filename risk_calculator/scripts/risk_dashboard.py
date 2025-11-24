@@ -15,11 +15,15 @@ from typing import Dict, Any, Optional
 import base64
 from PIL import Image
 
+# Import index chart component
+from index_chart_component import render_index_chart_tab
+
 # Constants
 SCRIPT_DIR = Path(__file__).parent.resolve()
 PROJECT_DIR = SCRIPT_DIR.parent.resolve()  # risk_calculator directory
 JSON_DIR = PROJECT_DIR / "json"
 IMAGES_DIR = PROJECT_DIR / "images"
+DATA_DIR = PROJECT_DIR / "data"
 
 # Get logo for page icon
 logo_path = IMAGES_DIR / "logo_1.webp"
@@ -1522,7 +1526,7 @@ def main():
     assessments = load_all_assessments()
     
     if not assessments:
-        st.error("No assessment files found. Please run risk_calculator_2.py first.")
+        st.error("No assessment files found. Please run risk_calculator.py first.")
         return
     
     # Sidebar for navigation
@@ -1537,7 +1541,7 @@ def main():
         
         view_mode = st.radio(
             "Select View",
-            ["Country Analysis", "Country Comparison", "About"],
+            ["Country Analysis", "Country Comparison", "Index Performance", "About"],
             index=0,
             label_visibility="visible"
         )
@@ -1552,6 +1556,10 @@ def main():
             assessment = assessments[selected_country]
             
         elif view_mode == "Country Comparison":
+            selected_country = None
+            assessment = None
+            
+        elif view_mode == "Index Performance":
             selected_country = None
             assessment = None
             
@@ -1577,6 +1585,13 @@ def main():
     
     elif view_mode == "Country Comparison":
         render_comparison_view(assessments, all_time_series)
+        
+        # Newsletter subscription link
+        render_newsletter_subscription()
+    
+    elif view_mode == "Index Performance":
+        # Render index chart tab
+        render_index_chart_tab(output_dir=str(DATA_DIR), show_subheader=True, show_info=True)
         
         # Newsletter subscription link
         render_newsletter_subscription()
